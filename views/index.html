@@ -1,0 +1,75 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        URL Shortener Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h3 class="bold"> User stories</h3>
+      <ul>
+        <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+        <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+      </ul>
+     
+      <h3> Example Usage</h3>
+      <p class="link">
+        https://url-microservice01.glitch.me/new/http://www.google.com<br>
+        https://url-microservice01.glitch.me/new/http://foo.com:80
+      </p>
+      
+      <h3> Example Output</h3>
+        <p class="link">{ "original_url":"http://foo.com:80",<br> "short_url":"https://url-microservice06.glitch.me/8170" }</p>
+      
+      <h3> Usage</h3>
+        <p class="link">https://url-microservice01.glitch.me/2871</p>
+      
+      <h3>Will direct to</h3>
+        <p class="link">https://www.google.com/</p>      
+ 
+      
+    </main>
+
+ 
+    
+    <footer>
+      <a href="https://freecodecamp.org">
+        FCC exercise 03
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    
+
+
+    <script 
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        
+  
+  </body>
+</html>
